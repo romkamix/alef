@@ -1,0 +1,28 @@
+.input {
+  border: 1px solid $grayl;
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: border-color 0.3s ease-in;
+
+  &,
+  &__label,
+  &__field {
+    display: block;
+  }
+
+  &__label {
+    @include paragraph_13_3;
+    padding-bottom: 2px;
+    opacity: 0.48;
+  }
+
+  &__field {
+    @include paragraph_16_2;
+    width: 100%;
+    border: none;
+  }
+
+  &_error {
+    border-color: $error;
+  }
+}

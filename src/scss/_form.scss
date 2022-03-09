@@ -1,0 +1,49 @@
+.form {
+  &__block {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 45px;
+  }
+
+  &__header-title {
+    @include paragraph_16_2_m;
+    margin: 0;
+  }
+
+  &__row,
+  &__grid {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    gap: 18px;
+  }
+
+  &__row-child {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__child {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $grayl;
+    border-radius: 5px;
+  }
+
+  &__person,
+  &__child {
+    @include paragraph_name;
+  }
+}

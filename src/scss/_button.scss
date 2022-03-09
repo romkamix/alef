@@ -1,0 +1,35 @@
+.btn {
+  @include paragraph_16_2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $primary;
+  background-color: $primary;
+  color: $white;
+  height: 45px;
+  padding: 0 20px;
+  border-radius: 100px;
+  transition: opacity 0.3s ease-in;
+
+  &:active {
+    transform: translate3d(-1px, -1px, 0);
+  }
+
+  &_inv {
+    background-color: $white;
+    color: $primary;
+  }
+
+  &_clr {
+    border: none;
+    background-color: transparent;
+    color: $primary;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
