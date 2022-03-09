@@ -60,7 +60,7 @@
 
 <script>
 import { required } from "vuelidate/lib/validators";
-import InputContainer from "../components/InputContainer.vue";
+import { InputContainer } from "../components";
 import { mapMutations, mapState } from "vuex";
 
 export default {
