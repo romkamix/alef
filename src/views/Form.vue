@@ -125,7 +125,7 @@ export default {
   mounted() {
     this.name = this.storedName;
     this.age = this.storedAge;
-    this.children = [...this.storedChildren];
+    this.storedChildren.forEach((e) => this.children.push({ ...e }));
   },
 };
 </script>
