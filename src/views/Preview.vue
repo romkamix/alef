@@ -1,5 +1,5 @@
 <template>
-  <div class="form">
+  <div class="form" v-if="name">
     <div class="form__block">
       <div class="form__header">
         <h2 class="form__header-title">Персональные данные</h2>
