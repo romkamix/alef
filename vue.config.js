@@ -1,5 +1,4 @@
-// const publicPath = "/quest/dist";
-const publicPath = "/alef/dist/";
+const publicPath = "/";
 
 module.exports = {
   publicPath: process.env.NODE_ENV === "production" ? publicPath : "/",
